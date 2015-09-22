@@ -10,6 +10,6 @@
 
 @interface StringsLoader : NSObject
 
--(void)runWithKey:(NSString*)key andProjID:(NSString*)projID;
+-(void)runWithProjKey:(NSString*)projKey;
 
 @end

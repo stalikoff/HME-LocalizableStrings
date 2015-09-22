@@ -15,10 +15,17 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Hello, World!");
         
         char *par1 = argv[1];
-        char *par2 = argv[2];
+        
+//        NSString *projKey = @"73963765423833cc3045ce25267952b8";
         
         StringsLoader *loader = [StringsLoader new];
-        [loader runWithKey: [NSString stringWithUTF8String:par1] andProjID: [NSString stringWithUTF8String:par2]];
+
+      
+        [loader runWithProjKey:[NSString stringWithUTF8String:par1]];
+        
+//        [loader runWithProjKey:projKey];
+        
+        
     }
     return 0;
 }
